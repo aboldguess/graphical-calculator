@@ -8,10 +8,11 @@ The application offers both a Tkinter-based GUI and a command-line mode for quic
 - Modern green styling with clear on-screen instructions.
 - Keyboard and button input support.
 - Debug-friendly logging to `dan_calculator.log`.
+- Simple graphing of functions using variable `x`.
 
 ## Prerequisites
 - Python 3.10 or newer with Tkinter support.
-- No external Python packages are required.
+- `matplotlib` for plotting.
 
 ## Quick Start
 ### Linux / macOS / Raspberry Pi
@@ -24,7 +25,7 @@ python dan_graphical_calculator.py
 # Option 2: manual steps
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
+python -m pip install --upgrade pip matplotlib
 python dan_graphical_calculator.py
 ```
 
@@ -38,7 +39,7 @@ python dan_graphical_calculator.py
 :: Option 2: manual steps
 python -m venv .venv
 call .venv\Scripts\activate
-python -m pip install --upgrade pip
+python -m pip install --upgrade pip matplotlib
 python dan_graphical_calculator.py
 ```
 
@@ -53,7 +54,7 @@ Runtime information is stored in `dan_calculator.log` for debugging purposes.
 
 ## Usage
 - Click buttons or use the keyboard to enter expressions.
-- Press `=` to compute or `C` to clear.
+- Press `=` to compute, `C` to clear, or `Graph` to plot expressions with `x`.
 - On-screen instructions guide basic usage, so no manual reading is required.
 
 ## License
