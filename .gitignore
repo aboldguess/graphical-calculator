@@ -1,0 +1,9 @@
+# Mini-readme: Ignore development artifacts
+# This file tells Git to ignore virtual environments, logs, and compiled artifacts.
+# Structure: patterns for Python caches, virtual environments, and logs.
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.venv/
+venv/
